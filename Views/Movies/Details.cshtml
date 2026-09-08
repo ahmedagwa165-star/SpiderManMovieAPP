@@ -1,0 +1,17 @@
+﻿@model SpiderManMoviesApp.Models.Movie
+
+@{
+    ViewData["Title"] = "Movie Details";
+}
+
+<div class="container mt-4">
+    <h2>Movie Details</h2>
+    <div class="card mt-3 shadow-sm" style="max-width: 500px;">
+        <div class="card-body">
+            <h4 class="card-title text-primary">@Model.Title</h4>
+            <p class="card-text mt-3"><strong>Director:</strong> @Model.Director</p>
+            <p class="card-text"><strong>Release Year:</strong> @Model.ReleaseYear</p>
+            <a class="btn btn-secondary mt-3" asp-action="Index">Back to List</a>
+        </div>
+    </div>
+</div>
